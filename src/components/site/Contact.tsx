@@ -1,5 +1,4 @@
 import { SITE } from "@/lib/site";
-import { MapPin, Phone, Mail, ArrowRight } from "lucide-react";
 
 export function Contact() {
   return (
@@ -24,30 +23,29 @@ export function Contact() {
 
             <ul className="mt-8 space-y-5">
               <li className="flex gap-3">
-                <MapPin className="h-5 w-5 shrink-0 mt-0.5" />
+                <i className="fi fi-sr-marker text-lg shrink-0 mt-0.5"></i>
                 <span className="text-sm">{SITE.contact.address}</span>
               </li>
               <li className="flex gap-3">
-                <Phone className="h-5 w-5 shrink-0 mt-0.5" />
+                <i className="fi fi-sr-phone-call text-lg shrink-0 mt-0.5"></i>
                 <a href={`tel:${SITE.contact.phone}`} className="text-sm hover:underline">
                   {SITE.contact.phone}
                 </a>
               </li>
               <li className="flex gap-3">
-                <Mail className="h-5 w-5 shrink-0 mt-0.5" />
+                <i className="fi fi-sr-envelope text-lg shrink-0 mt-0.5"></i>
                 <a href={`mailto:${SITE.contact.email}`} className="text-sm hover:underline">
                   {SITE.contact.email}
                 </a>
               </li>
             </ul>
 
-            <a
-              href={`mailto:${SITE.contact.email}`}
-              className="mt-10 inline-flex items-center gap-2 rounded-2xl bg-white text-primary px-6 py-3.5 text-sm font-semibold hover:-translate-y-0.5 transition-transform"
-            >
+
+            <a href={`mailto:${SITE.contact.email}`} className="...">
               {SITE.cta}
-              <ArrowRight className="h-4 w-4" />
+             <i className="fi fi-sr-arrow-right text-sm"></i>
             </a>
+
           </div>
 
           <div className="lg:col-span-3 relative overflow-hidden rounded-3xl glass shadow-glass min-h-[420px]">
