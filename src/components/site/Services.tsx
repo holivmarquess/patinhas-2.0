@@ -15,22 +15,18 @@ export function Services() {
         </div>
 
         <div className="mt-14 grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-          {SITE.services.items.map((s, i) => (
+          {SITE.services.items.map((s) => (
             <article
               key={s.title}
-              className={`group relative rounded-3xl glass p-8 hover:shadow-elegant hover:-translate-y-1 transition-all ${
-                i === 0 ? "lg:col-span-2 lg:row-span-1 bg-gradient-primary text-primary-foreground border-transparent" : ""
-              }`}
+              className="group relative rounded-3xl bg-white/40 backdrop-blur-md border border-white/40 p-8 hover:bg-gradient-primary hover:border-transparent hover:shadow-elegant hover:-translate-y-1 transition-all duration-300"
             >
-              <div
-                className={`grid h-14 w-14 place-items-center rounded-2xl text-3xl mb-5 ${
-                  i === 0 ? "bg-white/20" : "bg-accent"
-                }`}
-              >
-                {s.icon}
+              <div className="grid h-14 w-14 place-items-center rounded-2xl text-3xl mb-5 bg-accent group-hover:bg-white/20 transition-colors duration-300">
+                <i className={`${s.icon} text-primary group-hover:text-white transition-colors duration-300`}></i>
               </div>
-              <h3 className="text-2xl font-bold tracking-tight">{s.title}</h3>
-              <p className={`mt-3 ${i === 0 ? "text-primary-foreground/85" : "text-muted-foreground"}`}>
+              <h3 className="text-2xl font-bold tracking-tight group-hover:text-primary-foreground transition-colors duration-300">
+                {s.title}
+              </h3>
+              <p className="mt-3 text-muted-foreground group-hover:text-primary-foreground/85 transition-colors duration-300">
                 {s.description}
               </p>
             </article>
