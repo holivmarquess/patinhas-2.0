@@ -23,10 +23,10 @@ export const SITE = {
     title: "Impacto que Inspira",
     description: "Construindo um legado de compaixão e cuidado inabalável.",
     stats: [
-      { value: "5.3K+", label: "Resgates Anuais" },
+      { value: "3.2K+", label: "Resgates Anuais" },
       { value: "98%", label: "Taxa de Adoção" },
-      { value: "1.2K+", label: "Voluntários Ativos" },
-      { value: "15 Anos", label: "De Dedicação" },
+      { value: "100+", label: "Voluntários Ativos" },
+      { value: "6 Anos", label: "De Dedicação" },
     ],
   },
   services: {
@@ -58,10 +58,10 @@ export const SITE = {
     title: "Por Que Escolher o Abrigo Amigo Bicho?",
     subtext: "Nosso compromisso com a excelência e a paixão pelos animais nos tornam únicos.",
     items: [
-      { title: "Transparência Total", description: "Todas as nossas ações e finanças são abertas e disponíveis para consulta.", icon: "✅" },
-      { title: "Equipe Dedicada", description: "Cuidadores esforçados em garantir o melhor para cada animal.", icon: "🩺" },
-      { title: "Programas de Suporte", description: "Apoio pós-adoção para garantir uma adaptação tranquila e duradoura.", icon: "💙" },
-      { title: "Comunidade Engajada", description: "Faça parte de uma rede de amantes de animais que transformam vidas diariamente.", icon: "🌐" },
+      { title: "Transparência Total", description: "Todas as nossas ações e finanças são abertas e disponíveis para consulta.", icon: "fi fi-sr-shield-check" },
+      { title: "Equipe Dedicada", description: "Cuidadores esforçados em garantir o melhor para cada animal.", icon: "fi fi-sr-user-md" },
+      { title: "Programas de Suporte", description: "Apoio pós-adoção para garantir uma adaptação tranquila e duradoura.", icon: "fi fi-sr-life-ring" },
+      { title: "Comunidade Engajada", description: "Faça parte de uma rede de amantes de animais que transformam vidas diariamente.", icon: "fi fi-sr-users" },
     ],
   },
   story: {
