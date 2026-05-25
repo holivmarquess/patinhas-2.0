@@ -23,7 +23,7 @@ export function Differentials() {
                 className="rounded-3xl glass p-6 hover:shadow-elegant hover:-translate-y-1 transition-all"
               >
                 <div className="grid h-12 w-12 place-items-center rounded-2xl bg-accent text-2xl">
-                  {f.icon}
+                  <i className={`${f.icon} text-primary`}></i>
                 </div>
                 <h3 className="mt-4 text-lg font-bold">{f.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{f.description}</p>

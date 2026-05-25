@@ -23,10 +23,10 @@ export const SITE = {
     title: "Impacto que Inspira",
     description: "Construindo um legado de compaixão e cuidado inabalável.",
     stats: [
-      { value: "5.3K+", label: "Resgates Anuais" },
+      { value: "1.2K+", label: "Resgates Anuais" },
       { value: "98%", label: "Taxa de Adoção" },
-      { value: "1.2K+", label: "Voluntários Ativos" },
-      { value: "15 Anos", label: "De Dedicação" },
+      { value: "100+", label: "Voluntários Ativos" },
+      { value: "6 Anos", label: "De Dedicação" },
     ],
   },
   services: {
@@ -45,9 +45,9 @@ export const SITE = {
     title: "Como Você Pode Transformar uma Vida",
     subtext: "O processo é simples, transparente e recompensador.",
     steps: [
-      { title: "Escolha Sua Ação", description: "Adoção, apadrinhamento, voluntariado ou doação — seu impacto começa aqui.", icon: "🔍" },
-      { title: "Agende uma Conversa", description: "Converse com nossa equipe para encontrar a melhor forma de contribuir.", icon: "📞" },
-      { title: "Faça a Diferença", description: "Sua ação se materializa em amor, cuidado e um futuro mais digno.", icon: "✨" },
+      { title: "Escolha Sua Ação", description: "Adoção, apadrinhamento, voluntariado ou doação — seu impacto começa aqui.", icon: "fi fi-sr-cat" },
+      { title: "Agende uma Conversa", description: "Converse com nossa equipe para encontrar a melhor forma de contribuir.", icon: "fi fi-sr-phone-call" },
+      { title: "Faça a Diferença", description: "Sua ação se materializa em amor, cuidado e um futuro mais digno.", icon: "fi fi-sr-sparkles" },
     ],
   },
   gallery: {
@@ -60,7 +60,7 @@ export const SITE = {
     items: [
       { title: "Transparência Total", description: "Todas as nossas ações e finanças são abertas e disponíveis para consulta.", icon: "✅" },
       { title: "Equipe Dedicada", description: "Cuidadores esforçados em garantir o melhor para cada animal.", icon: "🩺" },
-      { title: "Programas de Suporte", description: "Apoio pós-adoção para garantir uma adaptação tranquila e duradoura.", icon: "💙" },
+      { title: "Programas de Suporte", description: "Apoio pré-adoção para garantir uma adaptação tranquila e duradoura.", icon: "fi fi-sr-cat" },
       { title: "Comunidade Engajada", description: "Faça parte de uma rede de amantes de animais que transformam vidas diariamente.", icon: "🌐" },
     ],
   },
