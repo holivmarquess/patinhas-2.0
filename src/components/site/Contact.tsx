@@ -48,7 +48,7 @@ export function Contact() {
 
           </div>
 
-          <div className="lg:col-span-3 relative overflow-hidden rounded-3xl glass shadow-glass min-h-[420px]">
+          <div className="lg:col-span-3 relative overflow-hidden rounded-3xl glass shadow-glass min-h-105">
             <iframe
               title="Mapa do abrigo"
               src={SITE.contact.mapEmbed}

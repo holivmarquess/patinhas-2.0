@@ -1,6 +1,32 @@
 import { useEffect, useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { Menu, X, PawPrint } from "lucide-react";
+
+function NavLink({
+  href,
+  name,
+  className,
+  onClick,
+}: {
+  href: string;
+  name: string;
+  className: string;
+  onClick?: () => void;
+}) {
+  if (href.startsWith("/")) {
+    return (
+      <Link to={href as "/adocoes"} className={className} onClick={onClick}>
+        {name}
+      </Link>
+    );
+  }
+  return (
+    <a href={href} className={className} onClick={onClick}>
+      {name}
+    </a>
+  );
+}
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -25,22 +51,21 @@ export function SiteHeader() {
             scrolled ? "glass-strong shadow-glass" : ""
           }`}
         >
-          <a href="#hero" className="flex items-center gap-2 font-bold text-lg">
+          <Link to="/" className="flex items-center gap-2 font-bold text-lg">
             <span className="grid h-9 w-9 place-items-center rounded-xl bg-gradient-primary text-primary-foreground shadow-glass">
               <PawPrint className="h-5 w-5" />
             </span>
             <span className="hidden sm:inline">{SITE.brand}</span>
-          </a>
+          </Link>
 
           <nav className="hidden lg:flex items-center gap-7">
             {SITE.nav.map((l) => (
-              <a
+              <NavLink
                 key={l.href}
                 href={l.href}
+                name={l.name}
                 className="text-sm font-semibold text-foreground/80 hover:text-primary transition-colors"
-              >
-                {l.name}
-              </a>
+              />
             ))}
           </nav>
 
@@ -65,14 +90,13 @@ export function SiteHeader() {
           <div className="lg:hidden mt-2 rounded-2xl glass-strong p-4 shadow-glass animate-fade-in-up">
             <div className="flex flex-col gap-1">
               {SITE.nav.map((l) => (
-                <a
+                <NavLink
                   key={l.href}
                   href={l.href}
-                  onClick={() => setOpen(false)}
+                  name={l.name}
                   className="rounded-lg px-3 py-2.5 text-sm font-semibold text-foreground/80 hover:bg-accent hover:text-primary"
-                >
-                  {l.name}
-                </a>
+                  onClick={() => setOpen(false)}
+                />
               ))}
               <a
                 href={SITE.ctaHref}

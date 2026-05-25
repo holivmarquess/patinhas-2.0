@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AdocoesIndexRouteImport } from './routes/adocoes/index'
+import { Route as AdocoesIdRouteImport } from './routes/adocoes/$id'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdocoesIndexRoute = AdocoesIndexRouteImport.update({
+  id: '/adocoes/',
+  path: '/adocoes/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdocoesIdRoute = AdocoesIdRouteImport.update({
+  id: '/adocoes/$id',
+  path: '/adocoes/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/adocoes/$id': typeof AdocoesIdRoute
+  '/adocoes/': typeof AdocoesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/adocoes/$id': typeof AdocoesIdRoute
+  '/adocoes': typeof AdocoesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/adocoes/$id': typeof AdocoesIdRoute
+  '/adocoes/': typeof AdocoesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/adocoes/$id' | '/adocoes/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/adocoes/$id' | '/adocoes'
+  id: '__root__' | '/' | '/adocoes/$id' | '/adocoes/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdocoesIdRoute: typeof AdocoesIdRoute
+  AdocoesIndexRoute: typeof AdocoesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/adocoes/': {
+      id: '/adocoes/'
+      path: '/adocoes'
+      fullPath: '/adocoes/'
+      preLoaderRoute: typeof AdocoesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/adocoes/$id': {
+      id: '/adocoes/$id'
+      path: '/adocoes/$id'
+      fullPath: '/adocoes/$id'
+      preLoaderRoute: typeof AdocoesIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdocoesIdRoute: AdocoesIdRoute,
+  AdocoesIndexRoute: AdocoesIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
