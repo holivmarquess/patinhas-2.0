@@ -108,12 +108,32 @@ export const SITE = {
   },
   contact: {
     title: "Encontre-nos",
-    subtext: "Visite nosso abrigo e conheça os animais que aguardam por um lar.",
-    address: "Rua da Esperança, 123 — Bairro da Adoção, Cidade Feliz - CF",
+    subtext: "Entre em contato direto ou inicie um dos nossos processos abaixo. Estamos prontos para te receber em qualquer um dos caminhos.",
     phone: "+55 (11) 98765-4321",
     email: "contato@abrigoamigobicho.org",
-    mapEmbed:
-      "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15750.32049870535!2d-46.633519399999995!3d-23.550519999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a210d65b99b%3A0x6d11a2f6c9d7a2f!2sParque%20Ibirapuera!5e0!3m2!1spt-BR!2sbr!4v1701542385610!5m2!1spt-BR!2sbr",
+    forms: {
+      sectionLabel: "Comece agora",
+      sectionTitle: "Inicie sua jornada com a gente",
+      sectionSubtext: "Escolha o caminho que mais combina com você. Cada um deles transforma vidas — incluindo a sua.",
+      items: [
+        {
+          id: "adocao",
+          title: "Quero Adotar",
+          description: "Preencha o formulário de adoção e dê o primeiro passo para receber um novo melhor amigo em casa.",
+          icon: "fi fi-sr-paw",
+          cta: "Iniciar processo de adoção",
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSdfm9cu4cnzvtPxxDpLlj82vhtRCDhT_6pNyy3NOm2AxLEA0Q/viewform",
+        },
+        {
+          id: "voluntariado",
+          title: "Quero Ser Voluntário",
+          description: "Doe seu tempo e habilidades para cuidar dos nossos animais. Preencha o cadastro e entraremos em contato.",
+          icon: "fi fi-sr-following",
+          cta: "Cadastrar como voluntário",
+          url: "https://docs.google.com/forms/d/e/1FAIpQLScNFS5wj1EeuVqyeGAt7veDHOfHvlu3Vw7znQJScntwc7XQnA/viewform",
+        },
+      ],
+    },
   },
   adoptions: {
     label: "Adoções",
