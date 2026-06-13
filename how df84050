@@ -1,0 +1,27 @@
+*   [33m1068a7f[m[33m ([m[1;35mrefs/stash[m[33m)[m WIP on feature/secao-adocoes: b5953a9 Refatora seção Contact: remove endereço físico e mapa, adiciona cards de formulários
+[31m|[m[32m\[m  
+[31m|[m * [33m0b9d672[m index on feature/secao-adocoes: b5953a9 Refatora seção Contact: remove endereço físico e mapa, adiciona cards de formulários
+[31m|[m[31m/[m  
+* [33mb5953a9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeature/secao-adocoes[m[33m)[m Refatora seção Contact: remove endereço físico e mapa, adiciona cards de formulários
+* [33m20538ea[m Adiciona seção completa de adoções ao site
+* [33m1c7dec5[m[33m ([m[1;31morigin/versao-nossa-historia[m[33m, [m[1;32mversao-nossa-historia[m[33m)[m Salvando a versão melhorada sem erros
+[32m|[m * [33mdf84050[m[33m ([m[1;31morigin/feature/secao-adocoes[m[33m)[m feat: adiciona modo noturno e corrige link do botao de acao
+[32m|[m * [33mfe725f0[m[33m ([m[1;31morigin/backup-nomes-errados[m[33m, [m[1;32mbackup-nomes-errados[m[33m)[m Salvando essa versão errada por segurança
+[32m|[m[32m/[m  
+* [33m505abe2[m Mudei o texto da história
+* [33mc6315c1[m Adicionei o menu nossa história, porém sem alterações
+* [33m86ea30d[m[33m ([m[1;32mversao-com-flaticon[m[33m)[m Mudei ícones e texto + cores de card
+[33m|[m * [33m31e2f36[m[33m ([m[1;31morigin/versao-com-flaticon[m[33m)[m Adiciona icones Flaticon e efeito hover nos services
+[33m|[m[33m/[m  
+*   [33m31cb73f[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Criou o README detalhado
+[35m|[m[36m\[m  
+[35m|[m * [33m709c21d[m Changes
+[35m|[m * [33m4b48713[m Changes
+[35m|[m * [33m144237e[m Work in progress
+[35m|[m[35m/[m  
+*   [33madac8b9[m Criou o site do Abrigo Amigo Bicho
+[1;31m|[m[1;32m\[m  
+[1;31m|[m * [33m452a76c[m Changes
+[1;31m|[m * [33m6d091c2[m Changes
+[1;31m|[m[1;31m/[m  
+* [33mba20ba6[m template: tanstack_start_ts_2026-05-06
