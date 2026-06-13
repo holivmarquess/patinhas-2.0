@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { SITE } from "@/lib/site";
 import { Menu, X, PawPrint } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+
 
 function NavLink({
   href,
@@ -29,6 +33,7 @@ function NavLink({
 }
 
 export function SiteHeader() {
+  const { dark, toggle } = useTheme();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -70,12 +75,29 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
+
             <a
               href={SITE.ctaHref}
               className="hidden sm:inline-flex items-center justify-center rounded-xl bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glass hover:shadow-elegant transition-all hover:-translate-y-0.5"
             >
               {SITE.cta}
             </a>
+
+            
+            <a   href={SITE.ctaHref}
+             className="hidden sm:inline-flex items-center justify-center rounded-xl bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glass hover:shadow-elegant transition-all hover:-translate-y-0.5"
+            >
+              {SITE.cta}
+            </a>
+
+            <button
+              onClick={toggle}
+              aria-label="Alternar tema"
+              className="grid h-10 w-10 place-items-center rounded-xl glass transition-all hover:scale-110"
+            >
+              <FontAwesomeIcon icon={dark ? faSun : faMoon} className="h-5 w-5" />
+            </button>
+
             <button
               aria-label="Abrir menu"
               onClick={() => setOpen(!open)}
@@ -100,6 +122,9 @@ export function SiteHeader() {
               ))}
               <a
                 href={SITE.ctaHref}
+
+              
+
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-xl bg-gradient-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
               >
@@ -111,4 +136,8 @@ export function SiteHeader() {
       </div>
     </header>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/feature/secao-adocoes
