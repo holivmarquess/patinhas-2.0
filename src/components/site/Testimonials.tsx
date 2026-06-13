@@ -25,22 +25,14 @@ export function Testimonials() {
                 i % 3 === 0 ? "md:translate-y-4" : ""
               }`}
             >
-              <Quote className="absolute top-6 right-6 h-8 w-8 text-primary/20" />
-              <blockquote className="text-lg text-foreground leading-relaxed">
+              <Quote className="absolute top-4 right-6 h-8 w-8 text-primary/20" />
+              <blockquote className="text-lg text-foreground leading-relaxed mt-10">
                 "{t.quote}"
               </blockquote>
-              <figcaption className="mt-6 flex items-center gap-4">
-                <img
-                  src={t.avatar}
-                  alt={t.name}
-                  loading="lazy"
-                  className="h-12 w-12 rounded-full object-cover ring-2 ring-primary/20"
-                />
-                <div>
+                <div className="mt-10">
                   <div className="font-bold">{t.name}</div>
                   <div className="text-sm text-muted-foreground">{t.role}</div>
                 </div>
-              </figcaption>
             </figure>
           ))}
         </div>
