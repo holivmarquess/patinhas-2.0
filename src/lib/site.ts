@@ -24,9 +24,9 @@ export const SITE = {
     title: "Impacto que Inspira",
     description: "Construindo um legado de compaixão e cuidado inabalável.",
     stats: [
-      { value: "3.2K+", label: "Resgates Anuais" },
-      { value: "98%", label: "Taxa de Adoção" },
-      { value: "100+", label: "Voluntários Ativos" },
+      { value: "+ 600 cães", label: "Resgates Anuais" },
+      { value: "90% ", label: "Taxa de Adoção" },
+      { value: "+ 30", label: "Voluntários Ativos" },
       { value: "6 Anos", label: "De Dedicação" },
     ],
   },
