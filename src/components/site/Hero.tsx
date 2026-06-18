@@ -22,7 +22,7 @@ export function Hero() {
         <div className="max-w-2xl">
           <span className="animate-fade-in-up inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-semibold text-primary">
             <Heart className="h-3.5 w-3.5 fill-current" />
-            ONG de proteção animal • há 15 anos
+            ONG de proteção animal • há 6 anos
           </span>
           <h1 className="animate-fade-in-up delay-150 mt-6 text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05]">
             {SITE.hero.headline.split(".").map((part, i, arr) =>

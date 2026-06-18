@@ -23,7 +23,7 @@ export const SITE = {
     title: "Impacto que Inspira",
     description: "Construindo um legado de compaixão e cuidado inabalável.",
     stats: [
-      { value: "+ 600 cães", label: "Resgates Anuais" },
+      { value: "+ 600", label: "Resgates Anuais" },
       { value: "90% ", label: "Taxa de Adoção" },
       { value: "+ 30", label: "Voluntários Ativos" },
       { value: "6 Anos", label: "De Dedicação" },
@@ -45,9 +45,9 @@ export const SITE = {
     title: "Como Você Pode Transformar uma Vida",
     subtext: "O processo é simples, transparente e recompensador.",
     steps: [
-      { title: "Escolha Sua Ação", description: "Adoção, apadrinhamento, voluntariado ou doação — seu impacto começa aqui.", icon: "🔍" },
-      { title: "Agende uma Conversa", description: "Converse com nossa equipe para encontrar a melhor forma de contribuir.", icon: "📞" },
-      { title: "Faça a Diferença", description: "Sua ação se materializa em amor, cuidado e um futuro mais digno.", icon: "✨" },
+      { title: "Escolha Sua Ação", description: "Adoção, apadrinhamento, voluntariado ou doação — seu impacto começa aqui."},
+      { title: "Agende uma Conversa", description: "Converse com nossa equipe para encontrar a melhor forma de contribuir."},
+      { title: "Faça a Diferença", description: "Sua ação se materializa em amor, cuidado e um futuro mais digno."},
     ],
   },
   gallery: {
@@ -79,13 +79,14 @@ export const SITE = {
     title: "O Que Dizem Nossos Amigos e Apoiadores",
     subtext: "Histórias reais de quem sentiu o impacto do nosso trabalho.",
     items: [
-      { quote: "Meu nome é Mickaelly Andrade e sou voluntária do Abrigo Amigo Bicho desde 2022. Ao longo desses anos, tive a oportunidade de participar de resgates e feirinhas de adoção, vivenciando de perto a luta e a dedicação em prol dos animais. Essa experiência me ensinou o valor da união, da empatia e da esperança, mostrando que, juntos, somos mais fortes e podemos transformar a vida de muitos animais, oferecendo cuidado, proteção e a chance de um novo começo.", name: "Mickaelly Andrade" ,role: "voluntária do Abrigo Amigo Bicho" , },
-      { quote: "Sou Alessandra e fui voluntária e adotante do abrigo. O voluntariado no Abrigo Amigo Bicho me ensinou o verdadeiro significado de compaixão e resiliência para salvar a vida de um pet e receber em troca o  amor mais puro que existe. Como adotante, entendi que mais do que entregar um animal, o abrigo analisa, orienta e apoia o adotante na construção de um novo lar seguro." , name: " Alessandra " ,role: "voluntária e adotante do abrigo" , },
-      { quote: "Conheci o trabalho do abrigo através das redes sociais. Acompanhava os resgates complexos e me impressionava com a transparência e a seriedade com que cada história era conduzida. Foi essa seriedade que me conquistou há 5 anos, quando decidi adotar a minha cadelinha, aliás, cadelona Paçoca (tia Mari).Para entender ainda mais de perto esse universo, meses depois me tornei voluntária, transportando animais, apoiando financeiramente e participando de feirinhas, pude testemunhar o que acontece por trás das telas: um cuidado impecável, respeito absoluto e um amor genuíno por cada vida resgatada.Este abrigo tem a minha total confiança porque entrega o que promete: responsabilidade do resgate até a adoção. Apoiar essa causa é ter a certeza de que o bem está sendo feito de verdade.", name: "Ísis", role: "adotante do abrigo", },
-      { quote: "Eu sou suspeita para falar do abrigo, porém, nao posso deixar de dar o meu depoimento de amor pela causa! Sou uma voluntária que admira esse projeto tão importante e que tem um olhar para os esquecidos. Sou mãe de um ser maravilhoso que encontrei lá ''Bento'' uma decisão que me encheu de alegria e amor! Quero deixar meu agradecimento por vocês existirem! A seriedade e preocupação que voces tem com eles é admirável! Que Deus sempre os abençoe!E que um dia consigamos dar um lar amoroso para todos eles." , name: "Patrícia", role: "adotante do abrigo",},
-      { quote: "Conheci o Abrigo Amigo Bicho no dia 06/07/2021, quando adotei a Maya, o amor da minha vida. Ela havia sido resgatada debaixo de um viaduto por Duda e Cleide. Desde o início, pelo Instagram e WhatsApp, o processo de adoção foi super simples, transparente e atencioso. Apaixonada pela dedicação e afeto delas com cada animal, decidi me tornar voluntária. Hoje, tenho muito orgulho de acompanhar esse trabalho de perto, ajudando em feirinhas e caronas voluntárias. Sou imensamente feliz por fazer parte dessa história que trouxe tanta felicidade para a minha vida!" , name: "Catarina", role: "adotante do abrigo", },
-      { quote: "Conheci o abrigo por acaso ao acompanhar o resgate de uma cachorrinha e seus filhotes lá em 2020. Dessa ninhada eu adotei Zelda, que hoje tem 6 aninhos de muito dengo e alegria. Admiro e confio no trabalho que Duda e Cleide realizam e por isso virei voluntária do abrigo, participando de feirinhas, eventos e ajudando financeiramente sempre que possível. Essa rede que elas criaram é muito especial e graças ao abrigo muitos cachorrinhos receberam outra chance na vida! É um trabalho difícil e árduo, com muitas dificuldades e frustrações e elas suportam tudo isso sem perder a esperança de dias melhores. Cada adoção responsável é uma celebração, uma alegria sem tamanho! Agradeço que existam pessoas responsáveis e preocupadas com os animais como as que conheci graças ao abrigo!", name: "Catarina", role: "adotante do abrigo", },
-      { quote:  "Ser voluntário do Abrigo Amigo Bicho é uma das experiências mais gratificantes da minha vida. Há muitos anos acompanho esse trabalho tão bonito e, sempre que posso, participo das feiras de adoção, contribuindo da forma que está ao meu alcance. Cada feira é uma oportunidade de presenciar histórias de amor sendo escritas, quando um animal resgatado encontra um lar cheio de carinho e responsabilidade. Ver o brilho nos olhos de quem adota e a chance de uma nova vida para tantos cães e gatos é algo que não tem preço. O Abrigo Amigo Bicho é formado por pessoas dedicadas, que lutam diariamente pela causa animal com muito amor, empenho e esperança. Fazer parte, mesmo que como voluntário, me traz uma enorme alegria e um sentimento de dever cumprido. Sou muito grato por poder colaborar com essa missão tão especial. A cada evento, a cada adoção e a cada vida transformada, tenho ainda mais certeza da importância desse trabalho. Que o Abrigo Amigo Bicho continue sendo um exemplo de amor, cuidado e respeito aos animais por muitos e muitos anos. ", name: "Vanessa Bezerra", role: " voluntário do Abrigo Amigo Bicho" },
+      { quote: "Sou voluntária do Abrigo Amigo Bicho desde 2022. Ao longo desses anos, tive a oportunidade de participar de resgates e feirinhas de adoção, vivenciando de perto a luta e a dedicação em prol dos animais. Essa experiência me ensinou o valor da união, da empatia e da esperança, mostrando que, juntos, somos mais fortes e podemos transformar a vida de muitos animais, oferecendo cuidado, proteção e a chance de um novo começo.", name: "Mickaelly Andrade" ,role: "voluntária desde 2022" , },
+      { quote: "Fui voluntária e adotante do abrigo. O voluntariado no Abrigo Amigo Bicho me ensinou o verdadeiro significado de compaixão e resiliência para salvar a vida de um pet e receber em troca o  amor mais puro que existe. Como adotante, entendi que mais do que entregar um animal, o abrigo analisa, orienta e apoia o adotante na construção de um novo lar seguro." , name: " Alessandra Pinheiro " ,role: "voluntária desde 2021 e adotante do abrigo" , },
+      { quote: "Conheci o trabalho do abrigo através das redes sociais. Acompanhava os resgates complexos e me impressionava com a transparência e a seriedade com que cada história era conduzida. Foi essa seriedade que me conquistou há 5 anos, quando decidi adotar a minha cadelinha, aliás, cadelona Paçoca (tia Mari).Para entender ainda mais de perto esse universo, meses depois me tornei voluntária, transportando animais, apoiando financeiramente e participando de feirinhas, pude testemunhar o que acontece por trás das telas: um cuidado impecável, respeito absoluto e um amor genuíno por cada vida resgatada.Este abrigo tem a minha total confiança porque entrega o que promete: responsabilidade do resgate até a adoção. Apoiar essa causa é ter a certeza de que o bem está sendo feito de verdade.", name: "Ísis Alves", role: "voluntária desde 2021", },
+      { quote: "Eu sou suspeita para falar do abrigo, porém, nao posso deixar de dar o meu depoimento de amor pela causa! Sou uma voluntária que admira esse projeto tão importante e que tem um olhar para os esquecidos. Sou mãe de um ser maravilhoso que encontrei lá ''Bento'' uma decisão que me encheu de alegria e amor! Quero deixar meu agradecimento por vocês existirem! A seriedade e preocupação que voces tem com eles é admirável! Que Deus sempre os abençoe!E que um dia consigamos dar um lar amoroso para todos eles." , name: "Ana Patrícia", role: "voluntária desde 2024",},
+      { quote: "Conheci o Abrigo Amigo Bicho no dia 06/07/2021, quando adotei a Maya, o amor da minha vida. Ela havia sido resgatada debaixo de um viaduto por Duda e Cleide. Desde o início, pelo Instagram e WhatsApp, o processo de adoção foi super simples, transparente e atencioso. Apaixonada pela dedicação e afeto delas com cada animal, decidi me tornar voluntária. Hoje, tenho muito orgulho de acompanhar esse trabalho de perto, ajudando em feirinhas e caronas voluntárias. Sou imensamente feliz por fazer parte dessa história que trouxe tanta felicidade para a minha vida!" , name: "Catarina Torres", role: "adotante e voluntária desde 2024", },
+      { quote: "Conheci o abrigo por acaso ao acompanhar o resgate de uma cachorrinha e seus filhotes lá em 2020. Dessa ninhada eu adotei Zelda, que hoje tem 6 aninhos de muito dengo e alegria. Admiro e confio no trabalho que Duda e Cleide realizam e por isso virei voluntária do abrigo, participando de feirinhas, eventos e ajudando financeiramente sempre que possível. Essa rede que elas criaram é muito especial e graças ao abrigo muitos cachorrinhos receberam outra chance na vida! É um trabalho difícil e árduo, com muitas dificuldades e frustrações e elas suportam tudo isso sem perder a esperança de dias melhores. Cada adoção responsável é uma celebração, uma alegria sem tamanho! Agradeço que existam pessoas responsáveis e preocupadas com os animais como as que conheci graças ao abrigo!", name: "Gabriela Barboza", role: "voluntária desde 2020", },
+      { quote:  "Ser voluntário do Abrigo Amigo Bicho é uma das experiências mais gratificantes da minha vida. Há muitos anos acompanho esse trabalho tão bonito e, sempre que posso, participo das feiras de adoção, contribuindo da forma que está ao meu alcance. Cada feira é uma oportunidade de presenciar histórias de amor sendo escritas, quando um animal resgatado encontra um lar cheio de carinho e responsabilidade. Ver o brilho nos olhos de quem adota e a chance de uma nova vida para tantos cães e gatos é algo que não tem preço. O Abrigo Amigo Bicho é formado por pessoas dedicadas, que lutam diariamente pela causa animal com muito amor, empenho e esperança. Fazer parte, mesmo que como voluntário, me traz uma enorme alegria e um sentimento de dever cumprido. Sou muito grato por poder colaborar com essa missão tão especial. A cada evento, a cada adoção e a cada vida transformada, tenho ainda mais certeza da importância desse trabalho. Que o Abrigo Amigo Bicho continue sendo um exemplo de amor, cuidado e respeito aos animais por muitos e muitos anos. ", name: "Vanessa Bezerra", role: " voluntária desde 2020" },
+      
     ],
   },
   faq: {
@@ -101,8 +102,7 @@ export const SITE = {
   contact: {
     title: "Encontre-nos",
     subtext: "Entre em contato direto ou inicie um dos nossos processos abaixo. Estamos prontos para te receber em qualquer um dos caminhos.",
-    phone: "+55 (11) 98765-4321",
-    email: "contato@abrigoamigobicho.org",
+    email: "abrigoamigobicho@outlook.com",
     forms: {
       sectionLabel: "Comece agora",
       sectionTitle: "Inicie sua jornada com a gente",
@@ -420,14 +420,9 @@ export const SITE = {
   footer: {
     copyright: `© ${new Date().getFullYear()} Abrigo Amigo Bicho. Todos os direitos reservados.`,
     social: [
-      { name: "Facebook", href: "#" },
       { name: "Instagram", href: "#" },
-      { name: "Twitter", href: "#" },
-      { name: "LinkedIn", href: "#" },
     ],
     utility: [
-      { name: "Política de Privacidade", href: "#" },
-      { name: "Termos de Uso", href: "#" },
     ],
   },
 };

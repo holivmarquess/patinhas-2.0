@@ -23,10 +23,6 @@ export function Contact() {
 
             <ul className="mt-8 space-y-5">
               <li className="flex gap-3">
-                <i className="fi fi-sr-phone-call text-lg shrink-0 mt-0.5"></i>
-                <a href={`tel:${SITE.contact.phone}`} className="text-sm hover:underline">
-                  {SITE.contact.phone}
-                </a>
               </li>
               <li className="flex gap-3">
                 <i className="fi fi-sr-envelope text-lg shrink-0 mt-0.5"></i>

@@ -22,9 +22,6 @@ export function HowItWorks() {
                 {i + 1}
               </div>
               <div className="mt-6 rounded-3xl glass p-7 text-center">
-                 <div className="text-3xl mb-3">
-                  <i className={`${step.icon} text-primary`}></i>
-                </div>
                 <h3 className="text-xl font-bold">{step.title}</h3>
                 <p className="mt-2 text-muted-foreground text-sm">{step.description}</p>
               </div>
