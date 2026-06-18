@@ -8,7 +8,6 @@ export const SITE = {
     { name: "Serviços", href: "#servicos" },
     { name: "Como Ajudar", href: "#como" },
     { name: "Resultados", href: "#galeria" },
-    { name: "Diferenciais", href: "#diferenciais" },
     { name: "Nossa História", href: "#historia" },
     { name: "Adoções", href: "/adocoes" },
     { name: "Depoimentos", href: "#depoimentos" },
@@ -38,7 +37,7 @@ export const SITE = {
       { title: "Apadrinhamento", description: "Apoie um animal específico com doações mensais e receba atualizações sobre seu afilhado.", icon: "fi fi-sr-heart" },
       { title: "Voluntariado Ativo", description: "Doe seu tempo e habilidades. Ajude na rotina, eventos e campanhas de conscientização.", icon: "fi fi-sr-handshake" },
       { title: "Doações e Parcerias", description: "Seu apoio financeiro ou em produtos é vital para nossa operação e expansão.", icon: "fi fi-sr-gift" },
-      { title: "Educação e Conscientização", description: "Promovemos a posse responsável através de materiais educativos.", icon: "fi fi-sr-books" },
+      { title: "Equipe Dedicada", description: "Cuidadores esforçados em garantir o melhor para cada animal.", icon: "fi fi-sr-users" },
       { title: "Resgate e Reabilitação", description: "Acompanhe como damos uma segunda chance a animais em risco, com tratamento e cuidado dedicados.", icon: "fi fi-sr-band-aid" },
     ],
   },
@@ -54,16 +53,6 @@ export const SITE = {
   gallery: {
     title: "Momentos de Pura Felicidade",
     subtext: "Cada foto conta uma história de esperança e um novo começo.",
-  },
-  differentials: {
-    title: "Por Que Escolher o Abrigo Amigo Bicho?",
-    subtext: "Nosso compromisso com a excelência e a paixão pelos animais nos tornam únicos.",
-    items: [
-      { title: "Transparência Total", description: "Todas as nossas ações e finanças são abertas e disponíveis para consulta.", icon: "fi fi-sr-shield-check" },
-      { title: "Equipe Dedicada", description: "Cuidadores esforçados em garantir o melhor para cada animal.", icon: "fi fi-sr-user-md" },
-      { title: "Programas de Suporte", description: "Apoio pós-adoção para garantir uma adaptação tranquila e duradoura.", icon: "fi fi-sr-life-ring" },
-      { title: "Comunidade Engajada", description: "Faça parte de uma rede de amantes de animais que transformam vidas diariamente.", icon: "fi fi-sr-users" },
-    ],
   },
   story: {
     label: "Nossa História",
