@@ -1,7 +1,6 @@
 import { SITE } from "@/lib/site";
 import heroImg from "@/assets/hero-pets.jpg";
 import { ArrowRight, Heart } from "lucide-react";
-import logo from '@/assets/logo.png';
 
 export function Hero() {
   return (
@@ -54,23 +53,11 @@ export function Hero() {
           </div>
 
           <div className="animate-fade-in-up delay-500 mt-12 grid grid-cols-2 gap-4 max-w-md">
-            {SITE.proof.stats.slice(0, 2).map((s) => (
-              <div key={s.label} className="rounded-2xl glass p-4">
-                <div className="text-3xl font-extrabold text-primary">{s.value}</div>
-                <div className="text-xs text-muted-foreground font-medium mt-1">{s.label}</div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 flex justify-center">
-        <img 
-          src={logo} 
-          alt="Logo Abrigo Amigo Bicho" 
-          className="w-full max-w-md rounded-2xl object-cover shadow-lg aspect-square"
-        />
-      </div>
+
     </section>
   );
 }

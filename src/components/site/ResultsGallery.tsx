@@ -7,12 +7,12 @@ import g5 from "@/assets/g5.jpeg";
 import g6 from "@/assets/g6.jpeg";
 
 const images = [
-  { src: g1, alt: "Casal feliz com cão adotado" },
-  { src: g2, alt: "Gato calico em novo lar" },
-  { src: g3, alt: "Voluntária com filhotes resgatados" },
-  { src: g4, alt: "Veterinária segurando filhote" },
-  { src: g5, alt: "Mulher passeando com cão adotado" },
-  { src: g6, alt: "Criança fazendo carinho em cão" },
+  { src: g2, alt: "Feirinha de adoção"},
+  { src: g1, alt: "Cães encontrando um novo lar"},
+  { src: g6, alt: " Alessandra Pinheiro com Teca" },
+  { src: g4, alt: "Voluntários do abrigo em uma feirinha de afoção" },
+  { src: g5, alt: "Feirinha em frente a Agroútil" },
+  { src: g3, alt: " Equipe do Abrigo Amigo Bicho"},
 ];
 
 export function ResultsGallery() {
@@ -33,11 +33,11 @@ export function ResultsGallery() {
           {images.map((img, i) => {
             const span = [
               "col-span-2 row-span-2",
-              "col-span-1 row-span-1",
-              "col-span-1 row-span-1",
-              "col-span-2 row-span-1 lg:col-span-2",
               "col-span-1 row-span-2",
-              "col-span-1 row-span-1",
+              "col-span-1 row-span-2",
+              "col-span-1 row-span-2 lg:col-span-1",
+              "col-span-1 row-span-2",
+              "col-span-2 row-span-2",
             ][i];
             return (
               <figure
