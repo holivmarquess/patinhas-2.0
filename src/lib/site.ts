@@ -271,14 +271,14 @@ export const SITE = {
     animals: [
       {
         id: "menino",
-        name: "Amendoim",
+        name: "Menino",
         species: "dog" as const,
         age: "2 anos",
         gender: "Macho",
         size: "Pequeno/Médio",
         personality: ["Alegre", "Adora correr"],
         shortDescription:
-          "Amendoim é pequeno no tamanho, mas infinito em energia. Entra num cômodo e deixa todo mundo sorrindo.",
+          "Foi resgatado atropelado na Perimetral em Olinda, perdeu o movimento das patas por conta do acidente.",
         story:
           "Foi resgatado atropelado na Perimetral em Olinda, perdeu o movimento das patas por conta do acidente. É muito meigo, tranquilo",
         sinceWhen: "Fevereiro de 2024",
@@ -493,7 +493,7 @@ export const SITE = {
         size: "Médio",
         personality: ["Calma"],
         shortDescription:
-          "Amendoim é pequeno no tamanho, mas infinito em energia. Entra num cômodo e deixa todo mundo sorrindo.",
+          "Foi resgatada junto com Tina e Telma e estava com 3 filhotes na barriguinha.",
         story:
           "Foi resgatada junto com Tina e Telma e estava com 3 filhotes na barriguinha. Deu a luz no abrigo. É muito calma, gosta de dar e receber carinho",
         care: {
@@ -509,15 +509,14 @@ export const SITE = {
         id: "liz",
         name: "Liz",
         species: "dog" as const,
-        age: "x ano",
-        gender: "Macho",
-        size: "Pequeno",
+        age: "1 ano e meio",
+        gender: "Fêmea",
+        size: "Médio",
         personality: ["xxx", "xxx", "Bagunceiro"],
         shortDescription:
-          "Amendoim é pequeno no tamanho, mas infinito em energia. Entra num cômodo e deixa todo mundo sorrindo.",
+          "Foi resgatada ainda filhote, abandonada na rua, cheia de feridas pelo corpo e com uma fratura na patinha..",
         story:
-          "Amendoim chegou ao abrigo em março de 2025, encontrado por moradores de um condomínio em Aldeia que notaram o filhote vagando sozinho pelos corredores há três dias. Ninguém sabia de onde tinha vindo. Ele chegou com barriga vazia, pulgas e aquele jeitão de quem não sabe que deveria estar triste.\n\nDesde o primeiro dia, ficou claro que Amendoim não perdeu tempo sendo infeliz. Em menos de 24 horas já tinha descoberto onde ficavam as petisqueiras, conquistado dois voluntários e encontrado o melhor lugar para tomar sol no abrigo.\n\nEle é pequeno — tem a cara de quem vai ficar pequeno para sempre — mas não tem a menor noção disso. Enfrenta cachorros três vezes maiores com a mesma confiança tranquila, e sai correndo na frente deles como se a brincadeira fosse dele por direito.\n\nAmendoim aprende rápido quando quer aprender, e faz exatamente a cara de inocente quando não quer. É afetivo do jeito mais inconveniente possível: sobe no seu colo enquanto você tenta trabalhar, deita em cima do seu celular e fica te olhando como se isso fosse completamente normal.\n\nEle já está vacinado e vermifugado. Ainda jovem demais para castrar, mas o procedimento está agendado. Precisa de um lar ativo, com pessoas que gostem de rir bastante e não se importem que a bagunça faz parte do pacote.",
-        sinceWhen: "Março de 2025",
+          "Foi resgatada ainda filhote, abandonada na rua, cheia de feridas pelo corpo e com uma fratura na patinha. É uma menina alegre e cheia de energia, gosta muito de brincar, correr. A patinha com sequela não a impede de ser feliz.",
         care: {
           vaccinated: true,
           neutered: false,
