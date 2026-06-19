@@ -9,6 +9,9 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
 // @cloudflare/vite-plugin builds from this — wrangler.jsonc main alone is insufficient.
 export default defineConfig({
+  // Desliga o alvo Cloudflare/Wrangler. O build passa a ser o padrão do Vite/TanStack
+  // (servidor Node em dist/), sem gerar wrangler.json nem .wrangler/deploy/config.json.
+  cloudflare: false,
   tanstackStart: {
     server: { entry: "server" },
   },
