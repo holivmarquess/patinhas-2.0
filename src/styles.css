@@ -35,20 +35,24 @@
   --shadow-glass: 0 4px 30px color-mix(in oklab, var(--primary) 12%, transparent);
   --shadow-elegant: 0 20px 60px -20px color-mix(in oklab, var(--primary) 35%, transparent);
   --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-glow));
-  --gradient-soft: linear-gradient(180deg, color-mix(in oklab, var(--primary) 4%, var(--background)), var(--background));
+  --gradient-soft: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--primary) 4%, var(--background)),
+    var(--background)
+  );
 }
 
 :root {
   --radius: 1rem;
-  --background: oklch(0.99 0.005 150);
+  --background: rgb(250, 253, 250);
   --foreground: oklch(0.18 0.03 160);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.18 0.03 160);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.18 0.03 160);
-  --primary: oklch(0.62 0.14 160);
+  --primary: oklch(66.861% 0.11221 178.991);
   --primary-foreground: oklch(0.99 0.005 150);
-  --primary-glow: oklch(0.78 0.16 158);
+  --primary-glow: oklch(77.881% 0.13753 180.351);
   --secondary: oklch(0.96 0.02 155);
   --secondary-foreground: oklch(0.25 0.05 160);
   --muted: oklch(0.96 0.015 155);
@@ -59,7 +63,7 @@
   --destructive-foreground: oklch(0.99 0.005 150);
   --border: oklch(0.9 0.02 155);
   --input: oklch(0.9 0.02 155);
-  --ring: oklch(0.62 0.14 160);
+  --ring: oklch(39.678% 0.06094 193.437);
 }
 
 .dark {
@@ -69,9 +73,9 @@
   --card-foreground: oklch(0.97 0.01 150);
   --popover: oklch(0.2 0.025 160);
   --popover-foreground: oklch(0.97 0.01 150);
-  --primary: oklch(0.72 0.15 160);
+  --primary: oklch(66.861% 0.11221 178.991);
   --primary-foreground: oklch(0.16 0.02 160);
-  --primary-glow: oklch(0.82 0.16 158);
+  --primary-glow: oklch(77.113% 0.1236 181.061);
   --secondary: oklch(0.26 0.03 160);
   --secondary-foreground: oklch(0.97 0.01 150);
   --muted: oklch(0.26 0.03 160);
@@ -82,7 +86,7 @@
   --destructive-foreground: oklch(0.97 0.01 150);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.72 0.15 160);
+  --ring: oklch(39.678% 0.06094 193.437);
 }
 
 @layer base {
@@ -136,10 +140,24 @@
 }
 
 @keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-.animate-fade-in-up { animation: fade-in-up 0.8s ease-out both; }
-.delay-150 { animation-delay: 0.15s; }
-.delay-300 { animation-delay: 0.3s; }
-.delay-500 { animation-delay: 0.5s; }
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out both;
+}
+.delay-150 {
+  animation-delay: 0.15s;
+}
+.delay-300 {
+  animation-delay: 0.3s;
+}
+.delay-500 {
+  animation-delay: 0.5s;
+}

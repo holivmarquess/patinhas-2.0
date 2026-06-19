@@ -18,16 +18,16 @@ Site de página única (SPA) com navegação por âncoras suaves, estética **gl
 
 ## 🧱 Stack Técnica
 
-| Camada | Tecnologia |
-|---|---|
-| Framework | **TanStack Start v1** (React 19 + SSR) |
-| Bundler | **Vite 7** |
-| Estilização | **Tailwind CSS v4** (via `@theme` em `src/styles.css`) |
-| Componentes UI | **shadcn/ui** + Radix primitives |
-| Roteamento | **TanStack Router** (file-based) |
-| Tipografia | **Urbanist** (Google Fonts) |
-| Deploy target | Edge (Cloudflare Workers) |
-| Geração de imagens | IA (assets em `src/assets/`) |
+| Camada             | Tecnologia                                             |
+| ------------------ | ------------------------------------------------------ |
+| Framework          | **TanStack Start v1** (React 19 + SSR)                 |
+| Bundler            | **Vite 7**                                             |
+| Estilização        | **Tailwind CSS v4** (via `@theme` em `src/styles.css`) |
+| Componentes UI     | **shadcn/ui** + Radix primitives                       |
+| Roteamento         | **TanStack Router** (file-based)                       |
+| Tipografia         | **Urbanist** (Google Fonts)                            |
+| Deploy target      | Edge (Cloudflare Workers)                              |
+| Geração de imagens | IA (assets em `src/assets/`)                           |
 
 ---
 
@@ -36,6 +36,7 @@ Site de página única (SPA) com navegação por âncoras suaves, estética **gl
 Todas as cores, gradientes, sombras e utilitários são definidos como **tokens semânticos** em `src/styles.css` — nenhum componente usa cores hardcoded.
 
 ### Paleta principal (OKLCH)
+
 - `--primary` — Emerald profundo (identidade da marca)
 - `--primary-glow` — Verde luminoso (gradientes e brilhos)
 - `--accent` — Tom suave para fundos de ícones
@@ -43,6 +44,7 @@ Todas as cores, gradientes, sombras e utilitários são definidos como **tokens 
 - `--muted-foreground` — Textos secundários
 
 ### Utilitários customizados
+
 - `.glass` / `.glass-strong` — Efeito glassmorphism (blur + transparência + borda)
 - `.bg-gradient-soft` — Gradiente suave de fundo entre seções
 - `.text-gradient` — Texto com gradiente emerald
@@ -87,17 +89,17 @@ src/
 
 ## 🧩 Seções da Página
 
-| # | Seção | Âncora | Propósito |
-|---|---|---|---|
-| 1 | **Hero** | `#hero` | Primeira impressão, headline emocional, CTA principal |
-| 2 | **ProofStrip** | — | Números de impacto (resgates, adoções, voluntários) |
-| 3 | **Services** | `#services` | 4 caminhos de envolvimento (adotar, apadrinhar, doar, voluntariar) |
-| 4 | **HowItWorks** | `#how` | Etapas do processo de adoção |
-| 5 | **ResultsGallery** | `#gallery` | Histórias visuais de transformação |
-| 6 | **Differentials** | `#diferenciais` | Diferenciais técnicos e éticos do abrigo |
-| 7 | **Testimonials** | `#testimonials` | Prova social de famílias adotantes |
-| 8 | **FAQ** | `#faq` | Resolve objeções comuns à adoção |
-| 9 | **Contact** | `#contact` | Endereço, telefone, mapa e CTA final |
+| #   | Seção              | Âncora          | Propósito                                                          |
+| --- | ------------------ | --------------- | ------------------------------------------------------------------ |
+| 1   | **Hero**           | `#hero`         | Primeira impressão, headline emocional, CTA principal              |
+| 2   | **ProofStrip**     | —               | Números de impacto (resgates, adoções, voluntários)                |
+| 3   | **Services**       | `#services`     | 4 caminhos de envolvimento (adotar, apadrinhar, doar, voluntariar) |
+| 4   | **HowItWorks**     | `#how`          | Etapas do processo de adoção                                       |
+| 5   | **ResultsGallery** | `#gallery`      | Histórias visuais de transformação                                 |
+| 6   | **Differentials**  | `#diferenciais` | Diferenciais técnicos e éticos do abrigo                           |
+| 7   | **Testimonials**   | `#testimonials` | Prova social de famílias adotantes                                 |
+| 8   | **FAQ**            | `#faq`          | Resolve objeções comuns à adoção                                   |
+| 9   | **Contact**        | `#contact`      | Endereço, telefone, mapa e CTA final                               |
 
 ---
 

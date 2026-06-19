@@ -21,7 +21,7 @@ export function Hero() {
         <div className="max-w-2xl">
           <span className="animate-fade-in-up inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-semibold text-primary">
             <Heart className="h-3.5 w-3.5 fill-current" />
-            ONG de proteção animal • há 15 anos
+            ONG de proteção animal • há 6 anos
           </span>
           <h1 className="animate-fade-in-up delay-150 mt-6 text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05]">
             {SITE.hero.headline.split(".").map((part, i, arr) =>
@@ -52,14 +52,7 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="animate-fade-in-up delay-500 mt-12 grid grid-cols-2 gap-4 max-w-md">
-            {SITE.proof.stats.slice(0, 2).map((s) => (
-              <div key={s.label} className="rounded-2xl glass p-4">
-                <div className="text-3xl font-extrabold text-primary">{s.value}</div>
-                <div className="text-xs text-muted-foreground font-medium mt-1">{s.label}</div>
-              </div>
-            ))}
-          </div>
+          <div className="animate-fade-in-up delay-500 mt-12 grid grid-cols-2 gap-4 max-w-md"></div>
         </div>
       </div>
     </section>

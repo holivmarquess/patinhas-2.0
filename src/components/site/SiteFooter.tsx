@@ -43,17 +43,7 @@ export function SiteFooter() {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4">Recursos</h4>
-            <ul className="space-y-2.5">
-              {SITE.footer.utility.map((l) => (
-                <li key={l.name}>
-                  <a href={l.href} className="text-sm text-muted-foreground hover:text-primary">
-                    {l.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-            <h4 className="font-bold mt-8 mb-4">Siga-nos</h4>
+            <h4 className="font-bold mb-4">Siga-nos</h4>
             <div className="flex gap-2">
               {SITE.footer.social.map((s) => {
                 const Icon = iconMap[s.name] ?? Facebook;
@@ -61,6 +51,8 @@ export function SiteFooter() {
                   <a
                     key={s.name}
                     href={s.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label={s.name}
                     className="grid h-10 w-10 place-items-center rounded-xl glass hover:bg-gradient-primary hover:text-primary-foreground transition-colors"
                   >
