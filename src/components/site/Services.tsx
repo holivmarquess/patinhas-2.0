@@ -5,9 +5,7 @@ export function Services() {
     <section id="servicos" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4">
         <div className="max-w-2xl">
-          <span className="text-xs font-bold uppercase tracking-widest text-primary">
-            Serviços
-          </span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">Serviços</span>
           <h2 className="mt-3 text-4xl lg:text-5xl font-extrabold tracking-tight">
             {SITE.services.title}
           </h2>
@@ -21,7 +19,9 @@ export function Services() {
               className="group relative rounded-3xl bg-white/40 backdrop-blur-md border border-white/40 p-8 hover:bg-gradient-primary hover:border-transparent hover:shadow-elegant hover:-translate-y-1 hover:scale-[1.02] transition-all duration-300"
             >
               <div className="grid h-14 w-14 place-items-center rounded-2xl text-3xl mb-5 bg-accent group-hover:bg-green500/80 transition-colors duration-300">
-                <i className={`${s.icon} text-primary group-hover:text-white transition-colors duration-300`}></i>
+                <i
+                  className={`${s.icon} text-primary group-hover:text-white transition-colors duration-300`}
+                ></i>
               </div>
               <h3 className="text-2xl font-bold tracking-tight group-hover:text-teal-600 transition-colors duration-300">
                 {s.title}

@@ -8,9 +8,7 @@ export function FAQ() {
     <section id="faq" className="py-24 lg:py-32 bg-gradient-soft">
       <div className="mx-auto max-w-3xl px-4">
         <div className="text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-primary">
-            FAQ
-          </span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">FAQ</span>
           <h2 className="mt-3 text-4xl lg:text-5xl font-extrabold tracking-tight">
             {SITE.faq.title}
           </h2>
@@ -37,9 +35,7 @@ export function FAQ() {
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-6 text-muted-foreground animate-fade-in-up">
-                    {item.a}
-                  </div>
+                  <div className="px-6 pb-6 text-muted-foreground animate-fade-in-up">{item.a}</div>
                 )}
               </div>
             );

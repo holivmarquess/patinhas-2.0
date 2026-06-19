@@ -4,7 +4,6 @@ export function OurStory() {
   return (
     <section id="historia" className="py-24 lg:py-32 bg-gradient-soft">
       <div className="mx-auto max-w-7xl px-4">
-
         <div className="text-center max-w-2xl mx-auto">
           <span className="text-xs font-bold uppercase tracking-widest text-primary">
             {SITE.story.label}
@@ -16,7 +15,6 @@ export function OurStory() {
         </div>
 
         <div className="mt-14 grid lg:grid-cols-5 gap-12 items-start">
-
           <div className="lg:col-span-3 space-y-5">
             {SITE.story.paragraphs.map((paragraph, i) => (
               <p key={i} className="text-foreground/80 leading-relaxed text-lg">
@@ -55,7 +53,6 @@ export function OurStory() {
               </ol>
             </div>
           </div>
-
         </div>
       </div>
     </section>

@@ -86,10 +86,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { 
-    rel: "stylesheet",
-    href: "https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css"
-  },
+      {
+        rel: "stylesheet",
+        href: "https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css",
+      },
     ],
   }),
   shellComponent: RootShell,

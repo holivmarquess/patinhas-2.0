@@ -7,12 +7,12 @@ import g5 from "@/assets/g5.jpeg";
 import g6 from "@/assets/g6.jpeg";
 
 const images = [
-  { src: g2, alt: "Feirinha de adoção"},
-  { src: g1, alt: "Cães encontrando um novo lar"},
+  { src: g2, alt: "Feirinha de adoção" },
+  { src: g1, alt: "Cães encontrando um novo lar" },
   { src: g6, alt: " Alessandra Pinheiro com Teca" },
   { src: g4, alt: "Voluntários do abrigo em uma feirinha de afoção" },
   { src: g5, alt: "Feirinha em frente a Agroútil" },
-  { src: g3, alt: " Equipe do Abrigo Amigo Bicho"},
+  { src: g3, alt: " Equipe do Abrigo Amigo Bicho" },
 ];
 
 export function ResultsGallery() {

@@ -5,9 +5,7 @@ export function Contact() {
     <section id="contato" className="py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-4">
         <div className="text-center max-w-2xl mx-auto">
-          <span className="text-xs font-bold uppercase tracking-widest text-primary">
-            Contato
-          </span>
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">Contato</span>
           <h2 className="mt-3 text-4xl lg:text-5xl font-extrabold tracking-tight">
             {SITE.contact.title}
           </h2>
@@ -22,8 +20,7 @@ export function Contact() {
             </p>
 
             <ul className="mt-8 space-y-5">
-              <li className="flex gap-3">
-              </li>
+              <li className="flex gap-3"></li>
               <li className="flex gap-3">
                 <i className="fi fi-sr-envelope text-lg shrink-0 mt-0.5"></i>
                 <a href={`mailto:${SITE.contact.email}`} className="text-sm hover:underline">
@@ -64,7 +61,9 @@ export function Contact() {
                 >
                   <div className="flex items-center gap-5">
                     <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-accent group-hover:bg-white/20 transition-colors duration-300">
-                      <i className={`${form.icon} text-2xl text-primary group-hover:text-white transition-colors duration-300`}></i>
+                      <i
+                        className={`${form.icon} text-2xl text-primary group-hover:text-white transition-colors duration-300`}
+                      ></i>
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-lg font-bold tracking-tight group-hover:text-primary-foreground transition-colors duration-300">

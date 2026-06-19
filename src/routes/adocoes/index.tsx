@@ -30,14 +30,11 @@ function AdocoesPage() {
   const [filter, setFilter] = useState<Filter>("all");
 
   const available = SITE.adoptions.animals.filter((a) => a.available);
-  const filtered =
-    filter === "all" ? available : available.filter((a) => a.species === filter);
+  const filtered = filter === "all" ? available : available.filter((a) => a.species === filter);
 
-  const base =
-    "cursor-pointer rounded-2xl px-5 py-2.5 text-sm font-semibold transition-colors";
+  const base = "cursor-pointer rounded-2xl px-5 py-2.5 text-sm font-semibold transition-colors";
   const activeBtn = "bg-primary text-primary-foreground";
-  const inactiveBtn =
-    "bg-accent text-foreground hover:bg-primary hover:text-primary-foreground";
+  const inactiveBtn = "bg-accent text-foreground hover:bg-primary hover:text-primary-foreground";
 
   return (
     <div className="min-h-screen bg-background text-foreground">

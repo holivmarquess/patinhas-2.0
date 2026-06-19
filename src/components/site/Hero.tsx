@@ -52,12 +52,9 @@ export function Hero() {
             </a>
           </div>
 
-          <div className="animate-fade-in-up delay-500 mt-12 grid grid-cols-2 gap-4 max-w-md">
-          </div>
+          <div className="animate-fade-in-up delay-500 mt-12 grid grid-cols-2 gap-4 max-w-md"></div>
         </div>
       </div>
-
-
     </section>
   );
 }

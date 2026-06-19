@@ -57,8 +57,8 @@ function AnimalDetailPage() {
             </div>
             <h1 className="text-3xl font-extrabold tracking-tight">Animal não encontrado</h1>
             <p className="mt-3 text-muted-foreground">
-              Não encontramos esse animal em nossa lista. Entre em contato — nossa equipe pode
-              ter mais informações.
+              Não encontramos esse animal em nossa lista. Entre em contato — nossa equipe pode ter
+              mais informações.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
               <Link
@@ -92,7 +92,6 @@ function AnimalDetailPage() {
 
       <main className="pt-28 pb-24 lg:pt-36 lg:pb-32">
         <div className="mx-auto max-w-7xl px-4">
-
           <Link
             to="/adocoes"
             className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors"
@@ -102,7 +101,6 @@ function AnimalDetailPage() {
           </Link>
 
           <div className="mt-8 grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-
             {/* Foto */}
             <div className="lg:sticky lg:top-28">
               <img
@@ -114,7 +112,6 @@ function AnimalDetailPage() {
 
             {/* Detalhes */}
             <div>
-
               {/* Tags de espécie e personalidade */}
               <div className="flex flex-wrap gap-2">
                 <span className="inline-flex items-center gap-1.5 rounded-full bg-accent px-3 py-1 text-xs font-semibold text-primary">
@@ -221,7 +218,6 @@ function AnimalDetailPage() {
               ))}
             </div>
           </section>
-
         </div>
       </main>
 

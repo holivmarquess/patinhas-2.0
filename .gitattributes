@@ -1,0 +1,13 @@
+# Normaliza quebras de linha: força LF no repositório para todos os arquivos de texto.
+# Evita que o Windows reintroduza CRLF (\r) e quebre o Prettier/ESLint.
+* text=auto eol=lf
+
+# Binários — nunca normalizar
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary

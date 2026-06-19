@@ -6,7 +6,6 @@ import { useTheme } from "@/hooks/use-theme";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
-
 function NavLink({
   href,
   name,
@@ -75,9 +74,9 @@ export function SiteHeader() {
           </nav>
 
           <div className="flex items-center gap-2">
-
-            <a   href={SITE.ctaHref}
-             className="hidden sm:inline-flex items-center justify-center rounded-xl bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glass hover:shadow-elegant transition-all hover:-translate-y-0.5"
+            <a
+              href={SITE.ctaHref}
+              className="hidden sm:inline-flex items-center justify-center rounded-xl bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glass hover:shadow-elegant transition-all hover:-translate-y-0.5"
             >
               {SITE.cta}
             </a>
@@ -114,8 +113,6 @@ export function SiteHeader() {
               ))}
               <a
                 href={SITE.ctaHref}
-
-
                 onClick={() => setOpen(false)}
                 className="mt-2 inline-flex items-center justify-center rounded-xl bg-gradient-primary px-5 py-3 text-sm font-semibold text-primary-foreground"
               >
@@ -128,4 +125,3 @@ export function SiteHeader() {
     </header>
   );
 }
-

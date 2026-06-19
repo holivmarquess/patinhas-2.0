@@ -36,5 +36,14 @@ export default tseslint.config(
       "@typescript-eslint/no-unused-vars": "off",
     },
   },
+  {
+    // Componentes shadcn/ui são vendados e exportam utilitários (ex.: buttonVariants,
+    // useFormField) junto com os componentes por convenção. O aviso de Fast Refresh
+    // não se aplica a eles, então desligamos a regra apenas nesta pasta.
+    files: ["src/components/ui/**/*.{ts,tsx}"],
+    rules: {
+      "react-refresh/only-export-components": "off",
+    },
+  },
   eslintPluginPrettier,
 );
