@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
 export function useTheme() {
-  const [dark, setDark] = useState(() => localStorage.getItem("theme") === "dark");
+  // No SSR/prerender não existe localStorage; só lê a preferência no navegador.
+  const [dark, setDark] = useState(
+    () => typeof localStorage !== "undefined" && localStorage.getItem("theme") === "dark",
+  );
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
