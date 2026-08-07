@@ -9,10 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as AdminRouteImport } from './routes/admin'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AdocoesIndexRouteImport } from './routes/adocoes/index'
 import { Route as AdocoesIdRouteImport } from './routes/adocoes/$id'
 
+const AdminRoute = AdminRouteImport.update({
+  id: '/admin',
+  path: '/admin',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,36 +37,47 @@ const AdocoesIdRoute = AdocoesIdRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/adocoes/$id': typeof AdocoesIdRoute
   '/adocoes/': typeof AdocoesIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/adocoes/$id': typeof AdocoesIdRoute
   '/adocoes': typeof AdocoesIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/admin': typeof AdminRoute
   '/adocoes/$id': typeof AdocoesIdRoute
   '/adocoes/': typeof AdocoesIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/adocoes/$id' | '/adocoes/'
+  fullPaths: '/' | '/admin' | '/adocoes/$id' | '/adocoes/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/adocoes/$id' | '/adocoes'
-  id: '__root__' | '/' | '/adocoes/$id' | '/adocoes/'
+  to: '/' | '/admin' | '/adocoes/$id' | '/adocoes'
+  id: '__root__' | '/' | '/admin' | '/adocoes/$id' | '/adocoes/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AdminRoute: typeof AdminRoute
   AdocoesIdRoute: typeof AdocoesIdRoute
   AdocoesIndexRoute: typeof AdocoesIndexRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/admin': {
+      id: '/admin'
+      path: '/admin'
+      fullPath: '/admin'
+      preLoaderRoute: typeof AdminRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,6 +104,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AdminRoute: AdminRoute,
   AdocoesIdRoute: AdocoesIdRoute,
   AdocoesIndexRoute: AdocoesIndexRoute,
 }
