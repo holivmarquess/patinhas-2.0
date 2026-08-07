@@ -44,7 +44,9 @@ export const Route = createFileRoute("/adocoes/$id")({
 });
 
 function AnimalDetailPage() {
-  const { animal } = Route.useLoaderData();
+  const animal = Route.useLoaderData().animal as
+    | (typeof SITE.adoptions.animals)[number]
+    | null;
 
   if (!animal) {
     return (
